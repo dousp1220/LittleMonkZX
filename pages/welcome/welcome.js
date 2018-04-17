@@ -9,7 +9,7 @@ Page({
   },
 
   comeIn: function() {
-    wx.switchTab({
+    wx.redirectTo({
       url: '../foreMan/foreMan/foreMan',
       success: function (res) { },
       fail: function (res) { console.log(res); },

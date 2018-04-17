@@ -18,12 +18,12 @@ App({
         //   complete: function (res) { },
         // })
 
-        // wx.navigateTo({
-        //   url: '../welcome/welcome',
-        //   success: function(res) {},
-        //   fail: function(res) {},
-        //   complete: function(res) {},
-        // })
+        wx.redirectTo({
+          url: '../welcome/welcome',
+          success: function (res) { },
+          fail: function (res) { },
+          complete: function (res) { },
+        })
       }
     })
     // 获取用户信息
