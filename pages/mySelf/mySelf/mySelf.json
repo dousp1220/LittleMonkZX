@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "navigatorView": "/components/navigatorView/navigatorView"
+  }
+}

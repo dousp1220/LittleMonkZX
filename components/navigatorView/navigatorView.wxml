@@ -1,0 +1,7 @@
+<!--components/navigatorView/navigatorView.wxml-->
+<view>
+  <navigator class='navigator-rutor' hover-class='navigator-rutor-hover' url="{{url}}" open-type="{{openType}}">
+    <image class='navigator-image' mode='scaleToFill' src='{{icon}}'></image>
+    <text class='navigator-text'>{{text}}</text>
+  </navigator>
+</view>

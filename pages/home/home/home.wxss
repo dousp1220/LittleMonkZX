@@ -1,0 +1,91 @@
+/* pages/home/home.wxss */
+.back {
+  background: #0f0;
+}
+image{
+   width: 100%;
+   height: 320rpx;
+}
+.adView{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 320rpx;
+}
+.adCView{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 5rpx 10rpx;
+  width: 100%;
+  height: 320rpx;
+}
+.adCViewSub{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 50%;
+  height: 320rpx;
+}
+.designView{
+  background-color: #bbb;
+  height: 50%;
+  margin: 5rpx 5rpx;
+}
+.testView{
+  background-color: #bbb;
+  height: 50%;
+  margin: 5rpx 5rpx;
+}
+.propagandaView{
+  height: 200rpx;
+  margin: 10rpx 10rpx;
+  background: #0f0;
+}
+.quotationView{
+  width: 50%;
+  background: #aaa;
+  margin: 5rpx 5rpx;
+}
+.tuKuSuoLveView {
+  width: 100%;
+  background: #eee;
+  margin: 5rpx 5rpx;
+  height: 360rpx;
+}
+.raidersView {
+  width: 100%;
+  background: #eee;
+  margin: 5rpx 5rpx;
+  height: 360rpx;
+}
+.navigator-arrow{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:15rpx;
+}
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#434343;
+}
+.active{
+    color:#F65959;
+    border-bottom: 4rpx solid #F65959;
+}
+swiper{
+  text-align: center;
+}
+text{
+  font-family: "微软雅黑";
+}

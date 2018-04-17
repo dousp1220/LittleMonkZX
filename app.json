@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home/home",
+    "pages/effectDiagram/effectDiagram",
+    "pages/foreMan/foreMan/foreMan",
+    "pages/logs/logs",
+    "pages/showDialog/showDialog",
+    "pages/welcome/welcome",
+    "pages/mySelf/mySelf/mySelf",
+    "pages/mySelf/appointment/appointment",
+    "pages/mySelf/collection/collection",
+    "pages/mySelf/follow/follow",
+    "pages/mySelf/turnOver/turnOver"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小和尚",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-fouce.png"
+      },
+      {
+        "pagePath": "pages/effectDiagram/effectDiagram",
+        "text": "图库",
+        "iconPath": "images/tuku.png",
+        "selectedIconPath": "images/tuku-fouce.png"
+      },
+      {
+        "pagePath": "pages/foreMan/foreMan/foreMan",
+        "text": "找工长",
+        "iconPath": "images/zx.png",
+        "selectedIconPath": "images/zx-fouce.png"
+      },
+      {
+        "pagePath": "pages/mySelf/mySelf/mySelf",
+        "text": "我",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-fouce.png"
+      }
+    ],
+    "backgroundColor": "#bb0",
+    "selectedColor": "#0f0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "dialog": "/components/Dialog/dialog"
+  },
+  "window": {
+    "navigationBarTitleText": "充值业务",
+    "backgroundColor": "#888"
+  }
+}
