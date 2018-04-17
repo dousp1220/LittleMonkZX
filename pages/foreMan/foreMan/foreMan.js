@@ -11,11 +11,21 @@ Page({
     province: "",
     citys: [],
     city: "",
-    countys: [],
-    county: '',
+    // countys: [],
+    // county: '',
     value: [0, 0, 0],
     values: [0, 0, 0],
     condition: false,
+
+    foreManDatas: {
+      "headerIcon": "../../images/header.png",
+      "name": "小李子",
+      "score": 5,
+      "reservationCount": 10,
+      "workTime": 10,
+      "specialty": "hahaha",
+      "id": "100001"
+    },
 
     searchValue: "",
     currentCity: "西安",
@@ -35,10 +45,7 @@ Page({
     var that = this;
 
     tcity.init(that);
-
     var cityData = that.data.cityData;
-
-
     const provinces = [];
     const citys = [];
     const countys = [];
@@ -50,18 +57,18 @@ Page({
     for (let i = 0; i < cityData[0].sub.length; i++) {
       citys.push(cityData[0].sub[i].name)
     }
-    console.log('city完成');
-    for (let i = 0; i < cityData[0].sub[0].sub.length; i++) {
-      countys.push(cityData[0].sub[0].sub[i].name)
-    }
+    // console.log('city完成');
+    // for (let i = 0; i < cityData[0].sub[0].sub.length; i++) {
+    //   countys.push(cityData[0].sub[0].sub[i].name)
+    // }
 
     that.setData({
       'provinces': provinces,
       'citys': citys,
-      'countys': countys,
+      // 'countys': countys,
       'province': cityData[0].name,
       'city': cityData[0].sub[0].name,
-      'county': cityData[0].sub[0].sub[0].name
+      // 'county': cityData[0].sub[0].sub[0].name,
     })
     console.log('初始化完成');
   },
@@ -71,6 +78,15 @@ Page({
       toastText: this.data.searchValue,
       toastHidden: false
     });
+  },
+  //综合排序
+  complexClicked: function() {
+  },
+  //服务次数排序
+  frequencyClicked: function () {
+  },
+  //口碑排序
+  PraiseClicked: function () {
   },
   //切换城市
   citySwitch: function() {
@@ -83,6 +99,14 @@ Page({
       condition: false
     })
   },
+  // 工长点击
+  fremanItemClick: function(e) {
+    // e.detail // 自定义组件触发事件时提供的detail对象
+    // debugger;
+    var fremanId = e.detail.id;
+    console.log("id", fremanId);
+  },
+  //省市联动
   bindChange: function (e) {
     //console.log(e);
     var val = e.detail.value
@@ -92,21 +116,21 @@ Page({
     if (val[0] != t[0]) {
       console.log('province no ');
       const citys = [];
-      const countys = [];
+      // const countys = [];
 
       for (let i = 0; i < cityData[val[0]].sub.length; i++) {
         citys.push(cityData[val[0]].sub[i].name)
       }
-      for (let i = 0; i < cityData[val[0]].sub[0].sub.length; i++) {
-        countys.push(cityData[val[0]].sub[0].sub[i].name)
-      }
+      // for (let i = 0; i < cityData[val[0]].sub[0].sub.length; i++) {
+      //   countys.push(cityData[val[0]].sub[0].sub[i].name)
+      // }
 
       this.setData({
         province: this.data.provinces[val[0]],
         city: cityData[val[0]].sub[0].name,
         citys: citys,
-        county: cityData[val[0]].sub[0].sub[0].name,
-        countys: countys,
+        // county: cityData[val[0]].sub[0].sub[0].name,
+        // countys: countys,
         values: val,
         value: [val[0], 0, 0]
       })

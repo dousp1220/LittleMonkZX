@@ -1,0 +1,20 @@
+<!--components/ForemanItem/ForemanItem.wxml-->
+<view class='foremanItemView' bindtap='itemClicked'>
+  <view class='mainView'>
+    <view class='topView'>
+      <!-- <image></image> -->
+      <view class='headImageView'>
+        <image class='headImage' src='{{foremanDate.headerIcon}}'></image></view>
+      <view class='nameView'>
+        <view>{{foremanDate.name}}</view>
+        <view>{{foremanDate.score}}</view>
+      </view>
+    </view>
+    <!-- 信息 -->
+    <view class='msgView'>
+      <view>{{foremanDate.reservationCount}}人预约 | 从业{{foremanDate.workTime}}年</view>
+      <view>工长特长：{{foremanDate.specialty}}</view>
+    </view>
+
+  </view>
+</view>

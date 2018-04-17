@@ -14,10 +14,26 @@
     </view>
   </view>
   <view class='splitLine'> </view>
-  <toast hidden="{{toastHidden}}" duration="1000"  bindchange="onToastChanged">    
-        {{toastText}}    
-  </toast> 
+  <!-- 快捷排序搜索 -->
+  <view class="fastSort">
+    <button size='mini' class='fastSortBtn' bindtap='complexClicked'>综合排序</button>
+    <button size='mini' class='fastSortBtn' bindtap='frequencyClicked'>服务次数</button>
+    <button size='mini' class='fastSortBtn' bindtap='PraiseClicked'>口碑</button>
+  </view>
+  <view class='splitLine'> </view>
+  <view>
+    <ForemanItem foremanDate="{{foreManDatas}}" bind:itemClicked='fremanItemClick'></ForemanItem>
+    <ForemanItem foremanDate="{{foreManDatas}}"></ForemanItem>
+  </view>
+
+  <button class='myBtn'>我的</button>
+  
 </view>
+
+<!-- 提示框 -->
+<toast hidden="{{toastHidden}}" duration="1000"  bindchange="onToastChanged">    
+  {{toastText}}    
+</toast> 
 
 <!-- 省市联动 -->
 <view wx:if="{{condition}}" class="citypicker">
