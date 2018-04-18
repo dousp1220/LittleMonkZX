@@ -1,7 +1,8 @@
 <!--pages/foreman/foreMan.wxml-->
 <view style='width:100%; height:100%'>
   <view class='top-view'>
-    <button size='mini' class='citySwitchBtn' bindtap='citySwitch'>{{city}}</button>
+    <!-- <button size='mini' class='citySwitchBtn' bindtap='citySwitch'>{{city}}</button> -->
+    <view class='citySwitchBtn' bindtap='citySwitch'>{{city}}</view>
     <view class='seach-view'>
       <!-- send	右下角按钮为“发送”
       search	右下角按钮为“搜索”

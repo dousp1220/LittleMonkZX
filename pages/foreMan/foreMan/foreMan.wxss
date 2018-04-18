@@ -31,9 +31,13 @@
    align-items:center; 
 }
 .citySwitchBtn {
-  height: 58rpx;
-  width: 20%;
-  border: none;
+  height: 55rpx;
+  /* width: 20%; */
+  line-height: 50rpx; 
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #dddddd;
 }
 
 .fastSort {
