@@ -17,7 +17,7 @@ Page({
     values: [0, 0, 0],
     condition: false,
 
-    foreManDatas: {
+    foreManDatas: [{
       "headerIcon": "../../images/header.png",
       "name": "小李子",
       "score": 5,
@@ -25,7 +25,15 @@ Page({
       "workTime": 10,
       "specialty": "hahaha",
       "id": "100001"
-    },
+    }, {
+      "headerIcon": "../../images/header.png",
+      "name": "豆子",
+      "score": 5,
+      "reservationCount": 10,
+      "workTime": 10,
+      "specialty": "hahaha",
+      "id": "100001"
+    }],  //数组
 
     searchValue: "",
     currentCity: "西安",

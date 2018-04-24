@@ -23,8 +23,7 @@
   </view>
   <view class='splitLine'> </view>
   <view>
-    <ForemanItem foremanDate="{{foreManDatas}}" bind:itemClicked='fremanItemClick'></ForemanItem>
-    <ForemanItem foremanDate="{{foreManDatas}}"></ForemanItem>
+    <ForemanItem wx:for="{{foreManDatas}}" foremanDate="{{item}}" bind:itemClicked='fremanItemClick'></ForemanItem>
   </view>
 
   <button class='myBtn'>我的</button>
