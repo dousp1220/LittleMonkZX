@@ -1,0 +1,17 @@
+/* components/exampleItem/exampleItem.wxss */
+
+.itemLayout{
+  display: inline-flex;
+  flex-direction: column;
+  width: 400rpx;
+  margin: 0 5rpx;
+}
+
+.imageView {
+  width: 400rpx;
+  height: 250rpx;
+}
+
+.detailView {
+  font-size: 10px;
+}

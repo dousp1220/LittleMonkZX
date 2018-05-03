@@ -1,0 +1,7 @@
+<!--components/fiveStarScore/fiveStarScore.wxml-->
+<view class='allStar'>
+    <image wx:key="unique" wx:for="{{stars}}" class="star-image" src="{{score > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+      <!-- <view class="iteml" data-score="{{item+0.5}}" bindtap="selectLeft"></view>
+      <view class="item" data-score="{{item+1}}" bindtap="selectRight"></view> -->
+    </image>
+</view>

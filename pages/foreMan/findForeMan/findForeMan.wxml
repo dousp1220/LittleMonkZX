@@ -1,0 +1,51 @@
+<!--pages/foreman/foreMan.wxml-->
+<view style='width:100%; height:100%'>
+  <view class='top-view'>
+    <!-- <button size='mini' class='citySwitchBtn' bindtap='citySwitch'>{{city}}</button> -->
+    <view class='citySwitchBtn' bindtap='citySwitch'>{{city}}</view>
+    <view class='seach-view'>
+      <!-- send	右下角按钮为“发送”
+      search	右下角按钮为“搜索”
+      next	右下角按钮为“下一个”
+      go	右下角按钮为“前往”
+      done	右下角按钮为“完成” -->
+      <input class="searchInput" placeholder="请输入工长姓名" confirm-type="search" bindconfirm='sreach' bindinput ="sreachInput">
+        <icon class="searchcion" size='20' type='search'></icon> 
+      </input>
+    </view>
+  </view>
+  <view class='splitLine'> </view>
+  <!-- 快捷排序搜索 -->
+  <view class="fastSort">
+    <button size='mini' class='fastSortBtn' bindtap='complexClicked'>综合排序</button>
+    <button size='mini' class='fastSortBtn' bindtap='frequencyClicked'>服务次数</button>
+    <button size='mini' class='fastSortBtn' bindtap='PraiseClicked'>口碑</button>
+  </view>
+  <view class='splitLine'> </view>
+  <view>
+    <ForemanItem wx:key="unique" wx:for="{{foreManDatas}}" foremanDate="{{item}}" bind:itemClicked='fremanItemClick'></ForemanItem>
+  </view>
+
+  <button class='myBtn'>我的</button>
+  
+</view>
+
+<!-- 提示框 -->
+<toast hidden="{{toastHidden}}" duration="1000"  bindchange="onToastChanged">    
+  {{toastText}}    
+</toast> 
+
+<!-- 省市联动 -->
+<view wx:if="{{condition}}" class="citypicker">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange" class="citybody">
+    <view class="cityheader">
+      <view bindtap="closeCitySwitch" class="city-true"><image class='closeCitySwitchImage' src='../../../images/closeSwitchCity.png'></image></view>
+    </view>
+    <picker-view-column>
+      <view wx:for="{{provinces}}" wx:key="item" class='cityPickerItem'>{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" wx:key="item" class='cityPickerItem'>{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

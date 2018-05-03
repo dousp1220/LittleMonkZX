@@ -1,0 +1,7 @@
+<!--components/exampleItem/exampleItem.wxml-->
+<view class='itemLayout' bindtap='itemClicked'>
+  <view>
+    <image class='imageView' src='{{exampleData.imageUrl}}'></image>
+  </view>
+  <view class='detailView'>{{exampleData.detailMag}}</view>
+</view>

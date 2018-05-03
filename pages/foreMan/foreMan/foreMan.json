@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "ForemanItem": "/components/ForemanItem/ForemanItem"
+    "fiveStarScore": "/components/fiveStarScore/fiveStarScore",
+    "exampleItem": "/components/exampleItem/exampleItem",
+    "navigatorView": "/components/navigatorView/navigatorView"
   }
 }

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ForemanItem": "/components/ForemanItem/ForemanItem"
+  }
+}

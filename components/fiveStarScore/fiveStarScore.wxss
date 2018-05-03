@@ -1,0 +1,22 @@
+/* components/fiveStarScore/fiveStarScore.wxss */
+.star-image {
+  width: 50rpx;
+  height: 50rpx;
+  src: "../../images/normal.png";
+  display: -webkit-flex;
+  flex-direction: row;
+}
+.iteml {
+  width: 25rpx;
+  height: 50rpx;
+  background: #f00;
+}
+.item {
+  width: 25rpx;
+  height: 50rpx;
+  background: #ff0;
+}
+.allStar {
+  display: flex;
+  flex-direction: row;
+}

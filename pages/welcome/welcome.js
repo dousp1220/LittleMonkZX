@@ -10,7 +10,7 @@ Page({
 
   comeIn: function() {
     wx.redirectTo({
-      url: '../foreMan/foreMan/foreMan',
+      url: '../foreMan/findForeMan/findForeMan',
       success: function (res) { },
       fail: function (res) { console.log(res); },
       complete: function (res) { },

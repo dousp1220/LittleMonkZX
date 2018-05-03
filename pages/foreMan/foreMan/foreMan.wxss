@@ -5,104 +5,65 @@
   background-color: #999;
   margin: 13rpx 3rpx;
 }
-.top-view {
+.foreManMsg {
   padding: 0px 5px;
   display: -webkit-flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items:center;
+  flex-flow: column;
+  justify-content: flex-start;
 }
-.seach-view {
-  flex-grow: 1;
-  margin-left:5px;
-}
-.searchcion {  
-  margin: 10rpx 10rpx 10rpx 10rpx;   
-  width: 20px;  
-  height: 20px;
-} 
-.searchInput {
-  height: 50rpx;
-  border: 1px solid #aaa;
-  border-radius: 10rpx;
+.topView {
   display: -webkit-flex;
-  flex-flow: row;
-  justify-content: flex-end;
-   align-items:center; 
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
-.citySwitchBtn {
-  height: 55rpx;
-  /* width: 20%; */
-  line-height: 50rpx; 
-  font-size: 16px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  background-color: #dddddd;
+.bottomView {
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.fastSort {
+.headImageView {
+  width: 80px;
+}
+.headImage {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+}
+
+.msgDetailView {
   display: -webkit-flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items:flex-start; 
+}
+
+.msgDetailTop {
+  display: flex;
   flex-flow: row;
   justify-content: flex-start;
 }
-.fastSortBtn {
-  margin: 5px, 0px;
+.msgDetailBottom {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
 }
 
-
-.citypickers{
-  position: fixed;
-  height: 100%;
+.exampleView {
+  display: flex;
+  white-space: nowrap;
   width: 100%;
-  min-height: 100%;
-  background-color: #ff0;
 }
 
-
-.citybody {
-  position: fixed;
-  bottom: 0px;
+.navigator-arrow{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:15rpx;
 }
 
-.cityheader {
-  position: absolute;
-  top:0px;
-  width: 100%;
-  z-index: 5;
-}
-
-.city-cancel {
-  float: left;
-  margin: 20rpx;
-  color: #828282;
-}
-
-.city-true {
-  float: right;
-  margin: 20rpx;
-  color: #00FF00;
-}
-.closeCitySwitchImage {
-  width: 20px;
-  height: 20px;
-}
-
-.section .picker {
-  background-color: #fff;
-  border-bottom: 2px #cccccc solid;
-  border-top: 2px #d9d9d9 solid;
-  padding: 20rpx;
-}
-
-.cityPickerItem {
-  line-height: 50px;
-  padding-left:10px;
-  text-align: center;
-  background-color: #ddd;
-}
-
-.myBtn {
-  position: fixed;
-  right: 0px;
-  bottom: 10px;
+.qualityView {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

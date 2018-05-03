@@ -1,6 +1,6 @@
 <!--pages/welcome/welcome.wxml-->
 <view class="container">
-  <text style='font-size: 20px;'>欢迎加入小和尚装修</text>
+  <text class='viewFont' style='font-size: 20px;'>欢迎加入小和尚装修</text>
   <image mode="scaleToFill" src="{{imageSrc}}"></image>
   <button bindtap='comeIn'>进入</button>
 

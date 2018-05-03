@@ -7,178 +7,69 @@ Page({
    * 页面的初始数据
    */
   data: {
-    provinces: [],
-    province: "",
-    citys: [],
-    city: "",
-    // countys: [],
-    // county: '',
-    value: [0, 0, 0],
-    values: [0, 0, 0],
-    condition: false,
+    foreManId: "",
+    foreManName: "",
+    foreManData: {
+      "headerIcon": "../../../images/header.png",
+      "origin" : "陕西",
+      "reservationCount" : 10,//工龄
+      "workerCount" : 10, //工人数
+      "reservationCount" : 10, //预约数
+      "scoreCount" : 110,//评价数
+      "score" : 5,//评分
+      "goodScoreScale": 99, //好评率
+      "specialty" : "砌砖，木工",//特长--多个逗号分割
+    },
+    examples: [
+      {
+        "id": 20001,
+        "imageUrl": '/images/cat.jpg',
+        "detailMag": '87平米北欧和现代的结合'
+      },
+      {
+        "id": 20002,
+        "imageUrl": '/images/cat.jpg',
+        "detailMag": '87平米北欧和现代的结合'
+      }
+    ],
+    evaluationDatas: {
+      "quality": "4.8",
+      "accuracy" : "4.7",
+      "evaluationList": [
+        {
 
-    foreManDatas: [{
-      "headerIcon": "../../images/header.png",
-      "name": "小李子",
-      "score": 5,
-      "reservationCount": 10,
-      "workTime": 10,
-      "specialty": "hahaha",
-      "id": "100001"
-    }, {
-      "headerIcon": "../../images/header.png",
-      "name": "豆子",
-      "score": 5,
-      "reservationCount": 10,
-      "workTime": 10,
-      "specialty": "hahaha",
-      "id": "100001"
-    }],  //数组
-
-    searchValue: "",
-    currentCity: "西安",
-
-    toastHidden: true,
-    toastText: ""
+        },
+        {
+          
+        }
+      ]
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '找工长',
-    });
-
-    var that = this;
-
-    tcity.init(that);
-    var cityData = that.data.cityData;
-    const provinces = [];
-    const citys = [];
-    const countys = [];
-
-    for (let i = 0; i < cityData.length; i++) {
-      provinces.push(cityData[i].name);
-    }
-    console.log('省份完成');
-    for (let i = 0; i < cityData[0].sub.length; i++) {
-      citys.push(cityData[0].sub[i].name)
-    }
-    // console.log('city完成');
-    // for (let i = 0; i < cityData[0].sub[0].sub.length; i++) {
-    //   countys.push(cityData[0].sub[0].sub[i].name)
-    // }
-
-    that.setData({
-      'provinces': provinces,
-      'citys': citys,
-      // 'countys': countys,
-      'province': cityData[0].name,
-      'city': cityData[0].sub[0].name,
-      // 'county': cityData[0].sub[0].sub[0].name,
+    this.setData({
+      foreManId: options.id,
+      foreManName: options.name
     })
-    console.log('初始化完成');
+    wx.setNavigationBarTitle({
+      title: this.data.foreManName,
+    });
   },
 
   sreach: function () {
     this.setData({
       toastText: this.data.searchValue,
       toastHidden: false
-    });
+    });  
   },
-  //综合排序
-  complexClicked: function() {
-  },
-  //服务次数排序
-  frequencyClicked: function () {
-  },
-  //口碑排序
-  PraiseClicked: function () {
-  },
-  //切换城市
-  citySwitch: function() {
-    this.setData({
-      condition: !this.data.condition
-    })
-  },
-  closeCitySwitch: function() {
-    this.setData({
-      condition: false
-    })
-  },
-  // 工长点击
-  fremanItemClick: function(e) {
-    // e.detail // 自定义组件触发事件时提供的detail对象
-    // debugger;
+
+  //案例点击
+  exampleItemClickedSlot: function(e) {
     var fremanId = e.detail.id;
-    console.log("id", fremanId);
-  },
-  //省市联动
-  bindChange: function (e) {
-    //console.log(e);
-    var val = e.detail.value
-    var t = this.data.values;
-    var cityData = this.data.cityData;
-
-    if (val[0] != t[0]) {
-      console.log('province no ');
-      const citys = [];
-      // const countys = [];
-
-      for (let i = 0; i < cityData[val[0]].sub.length; i++) {
-        citys.push(cityData[val[0]].sub[i].name)
-      }
-      // for (let i = 0; i < cityData[val[0]].sub[0].sub.length; i++) {
-      //   countys.push(cityData[val[0]].sub[0].sub[i].name)
-      // }
-
-      this.setData({
-        province: this.data.provinces[val[0]],
-        city: cityData[val[0]].sub[0].name,
-        citys: citys,
-        // county: cityData[val[0]].sub[0].sub[0].name,
-        // countys: countys,
-        values: val,
-        value: [val[0], 0, 0]
-      })
-
-      return;
-    }
-    if (val[1] != t[1]) {
-      console.log('city no');
-      const countys = [];
-
-      for (let i = 0; i < cityData[val[0]].sub[val[1]].sub.length; i++) {
-        countys.push(cityData[val[0]].sub[val[1]].sub[i].name)
-      }
-
-      this.setData({
-        city: this.data.citys[val[1]],
-        county: cityData[val[0]].sub[val[1]].sub[0].name,
-        countys: countys,
-        values: val,
-        value: [val[0], val[1], 0]
-      })
-      return;
-    }
-    if (val[2] != t[2]) {
-      console.log('county no');
-      this.setData({
-        county: this.data.countys[val[2]],
-        values: val
-      })
-      return;
-    }
-  },
-
-  onToastChanged: function() {
-    this.setData({ toastHidden: !this.data.toastHidden });
-  },
-
-  sreachInput: function(e) {
-    this.data.searchValue = e.detail.value;
-
+    console.log("exampleId", fremanId);
   },
 
   /**

@@ -6,14 +6,21 @@
       <view class='headImageView'>
         <image class='headImage' src='{{foremanDate.headerIcon}}'></image></view>
       <view class='nameView'>
-        <view>{{foremanDate.name}}</view>
-        <view>{{foremanDate.score}}</view>
+        <view class='detailTop'>
+          <view style='margin-right: 20rpx;'>{{foremanDate.name}}</view>
+          <view wx:if="{{foremanDate.isAuth == true}}">认证工长</view>
+          <view wx:else>未认证</view>
+        </view>
+        <view class='scoreView'>
+          <fiveStarScore score="{{foremanDate.score}}"></fiveStarScore>
+          <view style='margin-left:20rpx;'>{{foremanDate.scoreCount}}人评价</view>
+        </view>
       </view>
     </view>
     <!-- 信息 -->
     <view class='msgView'>
       <view>{{foremanDate.reservationCount}}人预约 | 从业{{foremanDate.workTime}}年</view>
-      <view>工长特长：{{foremanDate.specialty}}</view>
+      <view class='specialty'>工长特长：{{foremanDate.specialty}}</view>
     </view>
 
   </view>

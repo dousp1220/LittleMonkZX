@@ -13,3 +13,7 @@ page{
   /* background-color:#00f; */
   height:100%;
 }
+
+view text textarea {
+  font-family: 'Microsoft Yahei';
+}
