@@ -1,0 +1,4 @@
+<!--components/ScoreTag/ScoreTag.wxml-->
+<view class='tagView'>
+  <text class='tagText'>{{scoreText}}</text>
+</view>

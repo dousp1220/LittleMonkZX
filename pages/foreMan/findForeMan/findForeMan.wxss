@@ -28,7 +28,7 @@
   display: -webkit-flex;
   flex-flow: row;
   justify-content: flex-end;
-   align-items:center; 
+  align-items:center; 
 }
 .citySwitchBtn {
   height: 55rpx;
@@ -103,6 +103,6 @@
 
 .myBtn {
   position: fixed;
-  right: 0px;
+  right: 5px;
   bottom: 10px;
 }

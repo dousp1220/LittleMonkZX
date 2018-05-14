@@ -1,0 +1,11 @@
+/* components/ScoreTag/ScoreTag.wxss */
+
+.tagView {
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin: 2px 3px;
+}
+
+.tagText {
+  padding: 2px 8px;
+}

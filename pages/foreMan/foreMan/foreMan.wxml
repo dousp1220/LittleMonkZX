@@ -41,6 +41,14 @@
       <view>装修质量：{{evaluationDatas.quality}}</view>
       <view>装修精准度：{{evaluationDatas.accuracy}}</view>
     </view>
+    <!-- 评价标签 -->
+    <view class='scoreTags'>
+      <scoreTag wx:for="{{scoreTags}}" wx:key="unique" scoreText="{{item}}"></scoreTag>
+    </view>
+
+    <view class='scoreItems'>
+      <scoreItem wx:for="{{scores}}" wx:key="unique" scoreItemData="{{item}}"> </scoreItem>
+    </view>
   </view>
 </view>
 

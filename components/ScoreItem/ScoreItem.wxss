@@ -1,0 +1,36 @@
+/* components/ScoreItem/ScoreItem.wxss */
+.scoreItem {
+  margin: 5px;
+}
+
+.headerImage {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.scoreView {
+  color: #f00;
+}
+
+.scoreTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dataView {
+  margin-left: 20rpx; 
+  font-size: 10px;
+}
+
+.strutView {
+  flex-grow: 1;
+}
+
+.splitLine {
+  margin-top: 10rpx;
+  height: 2px;
+  background-color: #999;
+  margin: 13rpx 3rpx;
+}

@@ -67,3 +67,13 @@
   flex-direction: row;
   justify-content: space-around;
 }
+
+.scoreTags {
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

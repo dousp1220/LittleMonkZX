@@ -43,7 +43,27 @@ Page({
           
         }
       ]
-    }
+    },
+    scoreTags: [
+      "质量好（100）",
+      "666(666)",
+      "啦啦啦啦啦啦"
+    ],
+    scores: [{
+      "headerUrl": "../../images/header.png",
+      "phone": "135****4444",
+      "score": "5.0",
+      "scoreText": "好评",
+      "data": "2018-05-05",
+      "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+    },{
+      "headerUrl": "../../images/header.png",
+      "phone": "135****4444",
+      "score": "5.0",
+      "scoreText": "好评",
+      "data": "2018-05-05",
+      "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+    }]
   },
 
   /**

@@ -1,0 +1,18 @@
+<!--components/ScoreItem/ScoreItem.wxml-->
+<!-- <text>components/ScoreItem/ScoreItem.wxml</text> -->
+
+<view class="scoreItem">
+  <view class='splitLine'></view>
+  <!-- 头像行 -->
+  <view class='scoreTop'>
+    <image class="headerImage" src="{{scoreItemData.headerUrl}}" background-size="cover"></image>
+    <view class='scoreTopRight'>
+      <text>{{scoreItemData.phone}}</text>
+        <text>{{scoreItemData.score}}</text>
+        <text>分   {{scoreItemData.scoreText}}</text>
+        <text class='strutView'></text>
+        <text class='dataView'>{{scoreItemData.data}}</text>
+    </view>
+  </view>
+  <view>{{scoreItemData.scoreMainText}}</view>
+</view>

@@ -2,6 +2,8 @@
   "usingComponents": {
     "fiveStarScore": "/components/fiveStarScore/fiveStarScore",
     "exampleItem": "/components/exampleItem/exampleItem",
-    "navigatorView": "/components/navigatorView/navigatorView"
+    "navigatorView": "/components/navigatorView/navigatorView",
+    "scoreTag": "/components/ScoreTag/ScoreTag",
+    "scoreItem": "/components/ScoreItem/ScoreItem"
   }
 }

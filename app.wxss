@@ -17,3 +17,10 @@ page{
 view text textarea {
   font-family: 'Microsoft Yahei';
 }
+
+.splitLine {
+  margin-top: 10rpx;
+  height: 2px;
+  background-color: #999;
+  margin: 13rpx 3rpx;
+}
