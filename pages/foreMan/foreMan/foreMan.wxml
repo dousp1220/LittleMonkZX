@@ -50,6 +50,11 @@
       <scoreItem wx:for="{{scores}}" wx:key="unique" scoreItemData="{{item}}"> </scoreItem>
     </view>
   </view>
+  <!-- 底部按钮 -->
+  <view class="bottomBtnView">
+    <button bindtap='quotedPrice' class='bottom-btn'>小和尚报价</button>
+    <button bindtap='reservation' class='bottom-btn'>立即预约</button>
+  </view>
 </view>
 
 

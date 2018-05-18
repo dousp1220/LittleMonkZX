@@ -1,4 +1,4 @@
-/* pages/foreman/foreMan.wxss */
+/* pages/foreMan/reservation/reservation.wxss */
 .splitLine {
   margin-top: 10rpx;
   height: 2px;
@@ -16,11 +16,6 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-}
-.bottomView {
-  display: -webkit-flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 
 .headImageView {
@@ -50,44 +45,42 @@
   justify-content: flex-start;
 }
 
-.exampleView {
-  display: flex;
-  white-space: nowrap;
-  width: 100%;
-}
-
-.navigator-arrow{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom:15rpx;
-}
-
-.qualityView {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.scoreTags {
-  margin-top: 20rpx;
-  padding-left: 20rpx;
-  padding-right: 20rpx;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.bottomBtnView {
-  width: 100%;
+.submitBtnView {
   position: fixed;
-  /* right: 5px; */
-  bottom: 0px;
+  right: 15px; 
+  bottom: 5px;
+}
+
+.submitbtn {
+  background-color: #f55;
+  padding: 0 70rpx;
+}
+
+.inputRow {
+  padding: 5px 10px;
   display: -webkit-flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.bottom-btn {
-  width: 50%;
+.inputArea {
+  margin: 0 5rpx 0 5rpx;
+}
+
+.inputView {
+  flex-grow: 1;
+  border: 1px solid #999;
+  border-radius: 3px; 
+}
+
+.radio-group {
+  flex-grow: 1;
+  padding-right: 30rpx;
+  display: -webkit-inline-flex;
+  justify-content: flex-end;
+}
+
+.radio {
+  margin-right: 30rpx; 
 }

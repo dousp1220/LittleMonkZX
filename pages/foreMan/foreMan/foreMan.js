@@ -92,6 +92,20 @@ Page({
     console.log("exampleId", fremanId);
   },
 
+  //报价
+  quotedPrice: function(e) {
+    console.log("报价");
+  },
+
+  //预约
+  reservation: function(e) {
+    console.log("预约");
+    var url = '../reservation/reservation?id=' + this.data.fremanId;
+    wx.navigateTo({
+      url: url,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

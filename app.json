@@ -12,7 +12,8 @@
     "pages/mySelf/appointment/appointment",
     "pages/mySelf/collection/collection",
     "pages/mySelf/follow/follow",
-    "pages/mySelf/turnOver/turnOver"
+    "pages/mySelf/turnOver/turnOver",
+    "pages/foreMan/reservation/reservation"
   ],
   "window": {
     "backgroundTextStyle": "light",
