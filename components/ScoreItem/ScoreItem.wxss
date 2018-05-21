@@ -34,3 +34,16 @@
   background-color: #ddd;
   margin: 13rpx 3rpx;
 }
+
+.scoreImageView {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.scoreImage {
+  width: 100px;
+  height: 100px;
+  margin: 3px;
+}

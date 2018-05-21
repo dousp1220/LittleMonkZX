@@ -22,56 +22,56 @@ Page({
           "score": "5.0",
           "scoreText": "好评",
           "data": "2018-05-05",
-          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈，库造型那"
         }, {
           "headerUrl": "../../images/header.png",
           "phone": "135****4444",
           "score": "5.0",
           "scoreText": "好评",
           "data": "2018-05-05",
-          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+          "scoreMainText": "我家已经装完了，开心开心，全家人cdc都很满意，哈哈哈"
         }, {
           "headerUrl": "../../images/header.png",
           "phone": "135****4444",
           "score": "5.0",
           "scoreText": "好评",
           "data": "2018-05-05",
-          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+          "scoreMainText": "我家已经装完了，开心开心，全家人c都xsxsa很满意，哈哈哈"
         }, {
           "headerUrl": "../../images/header.png",
           "phone": "135****4444",
           "score": "5.0",
           "scoreText": "好评",
           "data": "2018-05-05",
-          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+          "scoreMainText": "我家已经装完了，开心开心，全家人都sdfsda很满意，哈哈哈"
         }, {
           "headerUrl": "../../images/header.png",
           "phone": "135****4444",
           "score": "5.0",
           "scoreText": "好评",
           "data": "2018-05-05",
-          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+          "scoreMainText": "我家已经装完了，开心开心，全家人fsdfsad都很满意，哈哈哈"
         }, {
           "headerUrl": "../../images/header.png",
           "phone": "135****4444",
           "score": "5.0",
           "scoreText": "好评",
           "data": "2018-05-05",
-          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+          "scoreMainText": "我家已经装完了，开心开sdafds心，全家人都很满意，哈哈哈"
         }, {
           "headerUrl": "../../images/header.png",
           "phone": "135****4444",
           "score": "5.0",
           "scoreText": "好评",
           "data": "2018-05-05",
-          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+          "scoreMainText": "我家已经装完了，开fsdfs心开心，全家人都很满意，哈哈哈"
         }, {
           "headerUrl": "../../images/header.png",
           "phone": "135****4444",
           "score": "5.0",
           "scoreText": "好评",
           "data": "2018-05-05",
-          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+          "scoreMainText": "我家已经装fsda完了，开心开心，全家人都很满意，哈哈哈"
         }, {
           "headerUrl": "../../images/header.png",
           "phone": "135****4444",

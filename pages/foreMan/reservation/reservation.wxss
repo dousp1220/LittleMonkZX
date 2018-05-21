@@ -47,11 +47,12 @@
 
 .submitBtnView {
   position: fixed;
-  right: 15px; 
-  bottom: 5px;
+  width: 100%;
+  bottom: 0px;
 }
 
 .submitbtn {
+  width: 100%;
   background-color: #f55;
   padding: 0 70rpx;
 }

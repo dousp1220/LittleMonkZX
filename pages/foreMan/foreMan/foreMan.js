@@ -47,7 +47,8 @@ Page({
           "score": "5.0",
           "scoreText": "好评",
           "data": "2018-05-05",
-          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈",
+          "scoreImages": ["/images/cat.jpg", "/images/cat.jpg", "/images/cat.jpg", "/images/cat.jpg"]
         }, {
           "headerUrl": "../../images/header.png",
           "phone": "135****4444",

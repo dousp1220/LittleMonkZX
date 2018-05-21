@@ -1,4 +1,4 @@
-<view style='width:100%; height:100%'>
+<view style='width:100%; height:100%;'>
   <view class='foreManMsg'>
     <view class='topView'>
       <view class='headImageView'>
@@ -54,11 +54,13 @@
     <view class='scoreItems'>
       <scoreItem wx:for="{{evaluationDatas.evaluationList}}" wx:key="unique" scoreItemData="{{item}}"> </scoreItem>
     </view>
+    <!-- 占位置 -->
+    <view class='bottomBtnView1'></view>
   </view>
   <!-- 底部按钮 -->
   <view class="bottomBtnView">
-    <button bindtap='quotedPrice' class='bottom-btn'>小和尚报价</button>
-    <button bindtap='reservation' class='bottom-btn'>立即预约</button>
+    <button type="primary" bindtap='quotedPrice' class='bottom-btn'>小和尚报价</button>
+    <button type="primary" bindtap='reservation' class='bottom-btn'>立即预约</button>
   </view>
 </view>
 

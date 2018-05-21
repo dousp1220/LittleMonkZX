@@ -55,7 +55,7 @@
   </view>
 
   <view class='submitBtnView'>
-    <button class='submitbtn' bindtap='formSubmit'>预约</button>
+    <button type="primary" class='submitbtn' bindtap='formSubmit'>预约</button>
   </view >
 
 </view>
