@@ -9,9 +9,15 @@ Page({
     foreManId: '',
     title: '免费预约工长量房',
 
-    items: [
+    isMakeRoomItems: [
       { name: '1', value: '已交房', checked: 'true'},
       { name: '0', value: '未交房' },
+    ],
+
+    houseTypeItems: [
+      { name: '0', value: '普通住宅', checked: 'true' },
+      { name: '1', value: '复式' },
+      { name: '2', value: '别墅' },
     ],
 
     foreManData: {
@@ -21,11 +27,23 @@ Page({
       reservationCount: 10,
     },
 
+    houseTypeArray: [
+      { value: '一室一厅', code: 1001 },
+      { value: '两室一厅', code: 1002 },
+      { value: '两室两厅', code: 1003 },
+      { value: '三室一厅', code: 1004 },
+      { value: '三室两厅', code: 1005 },
+      { value: '四室一厅', code: 1006 },
+      { value: '四室两厅', code: 1007 },
+    ],
+
+    houseTypeIndex: 0,
+
     formData: {
       name: "",
       phone: '',
       address: "",
-      houseType: 0,
+      houseType: 1001,
       isMakeRoom: true,
     },
   },
@@ -63,16 +81,43 @@ Page({
     })
   },
 
-  formSubmit: function(e) {
-    console.log("提交");
+  formSubmit: function (e) {
+    console.log("提交", this.data.formData);
+    this.formSubmit();
+  },
+
+  formSubmit: function() {
+    console.log("提交", this.data.formData);
+    var url = '../reservationFinish/reservationFinish?name=' + this.data.foreManData.foreManName;
+
+    wx.navigateTo({
+      url: url,
+    })
+  },
+
+  hoseTypeRadioChange: function(e) {
+    console.log('houseType,携带value值为：', e.detail.value)
+    var up = 'formData.houseType';
+    this.setData({
+      [up]: e.detail.value
+    })
   },
 
   radioChange: function (e) {
-    console.log('radio发生change事件，携带value值为：', e.detail.value)
+    console.log('makeRoom，携带value值为：', e.detail.value)
     var isTrue = e.detail.value == 1;
     var up = 'formData.isMakeRoom';
     this.setData({
       [up]: isTrue
+    })
+  },
+
+  bindPickerChange: function(e) {
+    console.log('户型携带value值为：', e.detail.value);
+    var up = 'formData.houseType';
+    this.setData({
+      houseTypeIndex: e.detail.value,
+      [up]: e.detail.value
     })
   },
 

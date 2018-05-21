@@ -1,0 +1,2 @@
+<!--pages/foreMan/allExamples/allExamples.wxml-->
+<text>{{foreManId}}</text>

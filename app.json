@@ -13,7 +13,12 @@
     "pages/mySelf/collection/collection",
     "pages/mySelf/follow/follow",
     "pages/mySelf/turnOver/turnOver",
-    "pages/foreMan/reservation/reservation"
+    "pages/foreMan/reservation/reservation",
+    "pages/foreMan/reservationFinish/reservationFinish",
+    "pages/foreMan/quotedPrice/quotedPrice",
+    "pages/foreMan/exampleDetial/exampleDetial",
+    "pages/foreMan/allScore/allScore",
+    "pages/foreMan/allExamples/allExamples"
   ],
   "window": {
     "backgroundTextStyle": "light",

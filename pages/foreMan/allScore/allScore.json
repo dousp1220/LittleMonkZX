@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "scoreTag": "/components/ScoreTag/ScoreTag",
+    "scoreItem": "/components/ScoreItem/ScoreItem"
+  }
+}

@@ -35,35 +35,29 @@ Page({
     evaluationDatas: {
       "quality": "4.8",
       "accuracy" : "4.7",
+      "scoreTags": [
+        "质量好（100）",
+        "666(666)",
+        "啦啦啦啦啦啦"
+      ],
       "evaluationList": [
         {
-
-        },
-        {
-          
+          "headerUrl": "../../images/header.png",
+          "phone": "135****4444",
+          "score": "5.0",
+          "scoreText": "好评",
+          "data": "2018-05-05",
+          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
+        }, {
+          "headerUrl": "../../images/header.png",
+          "phone": "135****4444",
+          "score": "5.0",
+          "scoreText": "好评",
+          "data": "2018-05-05",
+          "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
         }
       ]
     },
-    scoreTags: [
-      "质量好（100）",
-      "666(666)",
-      "啦啦啦啦啦啦"
-    ],
-    scores: [{
-      "headerUrl": "../../images/header.png",
-      "phone": "135****4444",
-      "score": "5.0",
-      "scoreText": "好评",
-      "data": "2018-05-05",
-      "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
-    },{
-      "headerUrl": "../../images/header.png",
-      "phone": "135****4444",
-      "score": "5.0",
-      "scoreText": "好评",
-      "data": "2018-05-05",
-      "scoreMainText": "我家已经装完了，开心开心，全家人都很满意，哈哈哈"
-    }]
   },
 
   /**
@@ -74,6 +68,7 @@ Page({
       foreManId: options.id,
       foreManName: options.name
     })
+
     wx.setNavigationBarTitle({
       title: this.data.foreManName,
     });
@@ -88,13 +83,25 @@ Page({
 
   //案例点击
   exampleItemClickedSlot: function(e) {
-    var fremanId = e.detail.id;
-    console.log("exampleId", fremanId);
+    var exampleId = e.detail.id;
+    console.log("exampleId", exampleId);
+
+    wx/wx.navigateTo({
+      url: '../exampleDetial/exampleDetial',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   },
 
   //报价
   quotedPrice: function(e) {
     console.log("报价");
+
+    var url = '../quotedPrice/quotedPrice';
+    wx.navigateTo({
+      url: url,
+    })
   },
 
   //预约

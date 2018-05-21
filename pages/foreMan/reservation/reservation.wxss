@@ -62,6 +62,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .inputArea {
@@ -72,6 +73,7 @@
   flex-grow: 1;
   border: 1px solid #999;
   border-radius: 3px; 
+  padding: 5px 2px;
 }
 
 .radio-group {
@@ -83,4 +85,19 @@
 
 .radio {
   margin-right: 30rpx; 
+}
+
+.pickerView {
+  display: flex;
+  flex-direction: row;
+}
+
+.pickerText {
+  flex-grow: 1;
+  padding-right: 50rpx;
+}
+
+.rightImage {
+  width: 30px;
+  height: 30px;
 }

@@ -31,6 +31,6 @@
 .splitLine {
   margin-top: 10rpx;
   height: 2px;
-  background-color: #999;
+  background-color: #ddd;
   margin: 13rpx 3rpx;
 }

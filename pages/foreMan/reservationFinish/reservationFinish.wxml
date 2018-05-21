@@ -1,0 +1,17 @@
+<!--pages/foreMan/reservationFinish/reservationFinish.wxml-->
+<!-- <text>pages/foreMan/reservationFinish/reservationFinish.wxml</text> -->
+
+<view>
+  <view>
+    <!-- 图片 -->
+    <view class='imageView'>
+      <image class='successImage' src='../../../images/success.png'></image>
+      <text class='successText'>恭喜您，预约成功</text>
+      <text class='tipText'>{{foreManName}}工长会为您免费上门量房，平台同事会提供另外两名优秀工长供您选择！</text>
+      <text class='tipText'>（个人信息将严格保密，请放心接听）</text>
+    </view>
+    <view class='finishButtonView' type="primary" bindtap="backHoom">
+      <button>完成</button>
+    </view>
+  </view>
+</view>

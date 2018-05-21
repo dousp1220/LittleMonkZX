@@ -26,12 +26,27 @@
       <view class='inputRow'><text>姓名：</text><input class='inputView' bindblur="nameBlur" placeholder='您的称呼' name="name"></input></view>
       <view class='inputRow'><text>电话：</text><input class='inputView' bindblur="phoneBlur" placeholder='您的联系方式' name="phone"></input></view>
       <view class='inputRow'><text>小区：</text><input class='inputView' bindblur="addressBlur" placeholder='请输入您需要装修的小区' name="address"></input></view>
-      <view class='inputRow'><text>房型：</text></view>
-      <view class='inputRow'><text>户型：</text></view>
+      <view class='inputRow'>
+        <text>房型：</text>
+        <radio-group class="radio-group" bindchange="hoseTypeRadioChange">
+          <label class="radio" wx:for="{{houseTypeItems}}" wx:key="key">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+      <view class='inputRow'>
+        <text>户型：</text>
+        <picker bindchange="bindPickerChange" range-key="value" value="{{houseTypeIndex}}" range="{{houseTypeArray}}">
+          <view class="pickerView">
+            <text class='pickerText'>{{houseTypeArray[houseTypeIndex].value}}</text>
+            <image class='rightImage' src='../../../images/right.png'></image>
+          </view>
+        </picker>
+      </view>
       <view class='inputRow'>
         <text>是否交房：</text>
         <radio-group class="radio-group" bindchange="radioChange">
-          <label class="radio" wx:for="{{items}}">
+          <label class="radio" wx:for="{{isMakeRoomItems}}" wx:key="key">
             <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
           </label>
         </radio-group>
@@ -40,7 +55,7 @@
   </view>
 
   <view class='submitBtnView'>
-    <button class='submitbtn'>预约</button>
+    <button class='submitbtn' bindtap='formSubmit'>预约</button>
   </view >
 
 </view>

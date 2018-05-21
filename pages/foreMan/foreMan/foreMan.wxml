@@ -26,7 +26,12 @@
   </view>
   <view class='splitLine '></view>
   <!-- 案例 -->
-  <view>推荐案例({{examples.length}})</view>
+  <view>
+    <view class="navigator-arrow">
+      <view>推荐案例({{examples.length}})</view>
+      <navigator url="../allExamples/allExamples?id={{foreManId}}" open-type="navigateTo" hover-class="navigator-hover">更多>></navigator>
+    </view>
+  </view>
   <scroll-view scroll-x class='exampleView' style="width: 100%">
      <exampleItem wx:for="{{examples}}" wx:key="unique" exampleData='{{item}}' bind:exampleItemClicked='exampleItemClickedSlot'></exampleItem>  
   </scroll-view>
@@ -35,7 +40,7 @@
   <view>
     <view class="navigator-arrow">
       <text>客户评价({{foreManData.scoreCount}})</text>
-      <navigator url="../../effectDiagram/effectDiagram" open-type="navigateTo" hover-class="navigator-hover">更多>></navigator>
+      <navigator url="../allScore/allScore?id={{foreManId}}" open-type="navigateTo" hover-class="navigator-hover">更多>></navigator>
     </view>
     <view class='qualityView'>
       <view>装修质量：{{evaluationDatas.quality}}</view>
@@ -43,11 +48,11 @@
     </view>
     <!-- 评价标签 -->
     <view class='scoreTags'>
-      <scoreTag wx:for="{{scoreTags}}" wx:key="unique" scoreText="{{item}}"></scoreTag>
+      <scoreTag wx:for="{{evaluationDatas.scoreTags}}" wx:key="unique" scoreText="{{item}}"></scoreTag>
     </view>
 
     <view class='scoreItems'>
-      <scoreItem wx:for="{{scores}}" wx:key="unique" scoreItemData="{{item}}"> </scoreItem>
+      <scoreItem wx:for="{{evaluationDatas.evaluationList}}" wx:key="unique" scoreItemData="{{item}}"> </scoreItem>
     </view>
   </view>
   <!-- 底部按钮 -->
