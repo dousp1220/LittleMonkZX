@@ -17,6 +17,6 @@
   <view>{{scoreItemData.scoreMainText}}</view>
   <!-- 图片 -->
   <view wx:if="{{scoreItemData.scoreImages.length != 0}}" class='scoreImageView'>
-    <image class='scoreImage' src='{{item}}' wx:key="unique" wx:for='{{scoreItemData.scoreImages}}'></image>
+    <image bindtap='previewlmg' wx:for-index='imgIdx' data-img-idx='{{imgIdx}}' class='scoreImage' src='{{item}}' wx:key="unique" wx:for='{{scoreItemData.scoreImages}}'></image>
   </view>
 </view>

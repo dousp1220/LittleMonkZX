@@ -20,6 +20,14 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    previewlmg: function (e) {
+      var imageIdx = e.currentTarget.dataset.imgIdx;
 
+      wx.previewImage({
+        current: this.data.scoreItemData.scoreImages[imageIdx],
+        urls: this.data.scoreItemData.scoreImages,
+      });
+
+    },
   }
 })
