@@ -26,7 +26,7 @@
     <ForemanItem wx:key="unique" wx:for="{{foreManDatas}}" foremanDate="{{item}}" bind:itemClicked='fremanItemClick'></ForemanItem>
   </view>
 
-  <button class='myBtn'>我的</button>
+  <button class='myBtn' bindtap='myClicked'>我的</button>
   
 </view>
 

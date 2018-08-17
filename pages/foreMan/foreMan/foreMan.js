@@ -86,13 +86,21 @@ Page({
   exampleItemClickedSlot: function(e) {
     var exampleId = e.detail.id;
     console.log("exampleId", exampleId);
-
-    wx/wx.navigateTo({
-      url: '../exampleDetial/exampleDetial',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
+    
+    wx.request({
+      url: 'https://www.test.com/posts',
+      data: {},
+      success: function (res) {
+        // debugger;
+        console.log(res.data)
+      }
     })
+    // wx/wx.navigateTo({
+    //   url: '../exampleDetial/exampleDetial',
+    //   success: function(res) {},
+    //   fail: function(res) {},
+    //   complete: function(res) {},
+    // })
   },
 
   //报价

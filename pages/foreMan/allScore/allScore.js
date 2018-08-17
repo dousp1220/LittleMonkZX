@@ -121,6 +121,18 @@ Page({
     });
   },
 
+  loadMore: function(e) {
+    console.log("loadMore");
+    wx.request({
+      url: 'https://www.test.com/posts',
+      data: {},
+      success: function (res) {
+        debugger;
+        console.log(res.data)
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

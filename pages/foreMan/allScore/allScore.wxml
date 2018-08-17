@@ -1,5 +1,5 @@
 <!--pages/foreMan/allScore/allScore.wxml-->
-<view>
+<scroll-view scroll-y="true" bindscrolltolower="loadMore">
   <view class='qualityView'>
     <view>装修质量：{{evaluationDatas.quality}}</view>
     <view>装修精准度：{{evaluationDatas.accuracy}}</view>
@@ -11,4 +11,4 @@
   <view class='scoreItems'>
     <scoreItem wx:for="{{evaluationDatas.evaluationList}}" wx:key="unique" scoreItemData="{{item}}"> </scoreItem>
   </view>
-</view>
+</scroll-view>
