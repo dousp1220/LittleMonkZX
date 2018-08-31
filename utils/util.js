@@ -63,7 +63,7 @@ module.exports = {
             'content-type': 'application/json'
         };
         header = this.dataAddToken(header);
-        this.request(url, "GET", header, this.json2form(data), success, fail, complete);
+        this.request(url, "GET", header, data， success, fail, complete);
     },
 
     dataAddToken: function(header) {
